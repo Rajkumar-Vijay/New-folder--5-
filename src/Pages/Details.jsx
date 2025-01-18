@@ -10,7 +10,7 @@ function Details() {
   useEffect(() => {
     const fetchMovieDetails = () => {
       setLoading(true);
-      fetch(`http://www.omdbapi.com/?apikey=c81e482b&i=${imdbID}`)  // Use imdbID from URL
+      fetch(`https://www.omdbapi.com/?apikey=c81e482b&i=${imdbID}`)  // Use imdbID from URL
         .then((response) => response.json())
         .then((data) => {
           setMovieDetails(data);
