@@ -15,7 +15,7 @@ function Home() {
 
   const fetchMovies = (query) => {
     setLoading(true);
-    fetch(`http://www.omdbapi.com/?s=${query}&apikey=c81e482b`)
+    fetch(`https://www.omdbapi.com/?s=${query}&apikey=c81e482b`)
       .then((response) => response.json())
       .then((data) => {
         if (data.Search && Array.isArray(data.Search)) {
